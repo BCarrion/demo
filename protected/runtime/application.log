@@ -1,0 +1,33 @@
+2017/05/11 01:25:02 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "loginhtml".' in C:\xampp\htdocs\yii1\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii1\framework\web\CController.php(270): CController->missingAction('loginhtml')
+#1 C:\xampp\htdocs\yii1\framework\web\CWebApplication.php(282): CController->run('loginhtml')
+#2 C:\xampp\htdocs\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('site/loginhtml')
+#3 C:\xampp\htdocs\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php/site/loginhtml
+HTTP_REFERER=http://localhost:8080/demo/index.php/site/contacthtml
+---
+2017/05/11 01:25:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "contacthtml".' in C:\xampp\htdocs\yii1\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii1\framework\web\CController.php(270): CController->missingAction('contacthtml')
+#1 C:\xampp\htdocs\yii1\framework\web\CWebApplication.php(282): CController->run('contacthtml')
+#2 C:\xampp\htdocs\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('site/contacthtm...')
+#3 C:\xampp\htdocs\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php/site/contacthtml
+HTTP_REFERER=http://localhost:8080/demo/index.php/site/pagehtml?view=about
+---
+2017/05/11 01:25:06 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "pagehtml".' in C:\xampp\htdocs\yii1\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii1\framework\web\CController.php(270): CController->missingAction('pagehtml')
+#1 C:\xampp\htdocs\yii1\framework\web\CWebApplication.php(282): CController->run('pagehtml')
+#2 C:\xampp\htdocs\yii1\framework\web\CWebApplication.php(141): CWebApplication->runController('site/pagehtml')
+#3 C:\xampp\htdocs\yii1\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php/site/pagehtml?view=about
+HTTP_REFERER=http://localhost:8080/demo/index.php/site/indexhtml
+---
