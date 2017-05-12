@@ -31,3 +31,253 @@ Stack trace:
 REQUEST_URI=/demo/index.php/site/pagehtml?view=about
 HTTP_REFERER=http://localhost:8080/demo/index.php/site/indexhtml
 ---
+2017/05/12 17:00:27 [error] [php] Use of undefined constant index - assumed 'index' (C:\xampp\htdocs\demo\protected\controllers\HolaController.php:9)
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): HolaController->runAction()
+#1 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): HolaController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): HolaController->run()
+#3 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\demo\index.php(13): CWebApplication->run()
+REQUEST_URI=/demo/hola/index
+in C:\xampp\htdocs\demo\protected\controllers\HolaController.php (9)
+in C:\xampp\htdocs\demo\index.php (13)
+2017/05/12 17:01:35 [error] [exception.CException] exception 'CException' with message 'HolaController cannot find the requested view "index".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 C:\xampp\htdocs\demo\protected\controllers\HolaController.php(9): CController->render('index', Array)
+#2 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#3 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('hola/index')
+#8 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/demo/hola/index
+---
+2017/05/12 17:01:53 [error] [exception.CException] exception 'CException' with message 'HolaController cannot find the requested view "index".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 C:\xampp\htdocs\demo\protected\controllers\HolaController.php(9): CController->render('index', Array)
+#2 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#3 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('hola/index')
+#8 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/demo/hola/index
+---
+2017/05/12 17:01:54 [error] [exception.CException] exception 'CException' with message 'HolaController cannot find the requested view "index".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 C:\xampp\htdocs\demo\protected\controllers\HolaController.php(9): CController->render('index', Array)
+#2 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#3 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('hola/index')
+#8 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/demo/hola/index
+---
+2017/05/12 17:02:41 [error] [exception.CException] exception 'CException' with message 'HolaController cannot find the requested view "index".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 C:\xampp\htdocs\demo\protected\controllers\HolaController.php(8): CController->render('index', Array)
+#2 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#3 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('hola/index')
+#8 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/demo/hola/index
+---
+2017/05/12 17:02:42 [error] [exception.CException] exception 'CException' with message 'HolaController cannot find the requested view "index".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 C:\xampp\htdocs\demo\protected\controllers\HolaController.php(8): CController->render('index', Array)
+#2 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#3 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('hola/index')
+#8 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/demo/hola/index
+---
+2017/05/12 17:02:45 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "index.php".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(270): CController->missingAction('index.php')
+#1 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('index.php')
+#2 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('hola/index.php')
+#3 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/hola/index.php
+---
+2017/05/12 17:02:49 [error] [exception.CException] exception 'CException' with message 'HolaController cannot find the requested view "index".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 C:\xampp\htdocs\demo\protected\controllers\HolaController.php(8): CController->render('index', Array)
+#2 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#3 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('hola/index')
+#8 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/demo/hola/index
+---
+2017/05/12 17:02:52 [error] [exception.CException] exception 'CException' with message 'HolaController cannot find the requested view "index".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): CController->renderPartial('index', Array, true)
+#1 C:\xampp\htdocs\demo\protected\controllers\HolaController.php(8): CController->render('index', Array)
+#2 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#3 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('hola')
+#8 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/demo/hola/
+---
+2017/05/12 17:04:12 [error] [exception.CException] exception 'CException' with message 'HolaController cannot find the requested view "index".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): CController->renderPartial('index', NULL, true)
+#1 C:\xampp\htdocs\demo\protected\controllers\HolaController.php(8): CController->render('index')
+#2 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#3 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('hola')
+#8 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/demo/hola/
+---
+2017/05/12 17:04:13 [error] [exception.CException] exception 'CException' with message 'HolaController cannot find the requested view "index".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): CController->renderPartial('index', NULL, true)
+#1 C:\xampp\htdocs\demo\protected\controllers\HolaController.php(8): CController->render('index')
+#2 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#3 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('hola')
+#8 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/demo/hola/
+---
+2017/05/12 17:04:13 [error] [exception.CException] exception 'CException' with message 'HolaController cannot find the requested view "index".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): CController->renderPartial('index', NULL, true)
+#1 C:\xampp\htdocs\demo\protected\controllers\HolaController.php(8): CController->render('index')
+#2 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#3 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('hola')
+#8 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/demo/hola/
+---
+2017/05/12 17:04:14 [error] [exception.CException] exception 'CException' with message 'HolaController cannot find the requested view "index".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): CController->renderPartial('index', NULL, true)
+#1 C:\xampp\htdocs\demo\protected\controllers\HolaController.php(8): CController->render('index')
+#2 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#3 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('hola')
+#8 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/demo/hola/
+---
+2017/05/12 17:04:14 [error] [exception.CException] exception 'CException' with message 'HolaController cannot find the requested view "index".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): CController->renderPartial('index', NULL, true)
+#1 C:\xampp\htdocs\demo\protected\controllers\HolaController.php(8): CController->render('index')
+#2 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#3 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('hola')
+#8 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/demo/hola/
+---
+2017/05/12 17:04:16 [error] [exception.CException] exception 'CException' with message 'HolaController cannot find the requested view "index".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:881
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): CController->renderPartial('index', NULL, true)
+#1 C:\xampp\htdocs\demo\protected\controllers\HolaController.php(8): CController->render('index')
+#2 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#3 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('index')
+#7 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('hola/index')
+#8 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/demo/hola/index
+---
+2017/05/12 17:07:49 [error] [php] Undefined variable: twitter (C:\xampp\htdocs\demo\protected\views\hola\index.php:1)
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(872): HolaController->renderFile()
+#1 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): HolaController->renderPartial()
+#2 C:\xampp\htdocs\demo\protected\controllers\HolaController.php(8): HolaController->render()
+#3 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): HolaController->runAction()
+#6 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): HolaController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): HolaController->run()
+#8 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\demo\index.php(13): CWebApplication->run()
+REQUEST_URI=/demo/hola/index
+in C:\xampp\htdocs\demo\protected\views\hola\index.php (1)
+in C:\xampp\htdocs\demo\protected\controllers\HolaController.php (8)
+in C:\xampp\htdocs\demo\index.php (13)
+2017/05/12 18:24:31 [error] [php] Trying to get property of non-object (C:\xampp\htdocs\demo\protected\views\hola\index.php:4)
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(872): HolaController->renderFile()
+#1 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): HolaController->renderPartial()
+#2 C:\xampp\htdocs\demo\protected\controllers\HolaController.php(9): HolaController->render()
+#3 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): HolaController->actionIndex()
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): HolaController->runAction()
+#6 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): HolaController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): HolaController->run()
+#8 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\demo\index.php(13): CWebApplication->run()
+REQUEST_URI=/demo/hola/index
+in C:\xampp\htdocs\demo\protected\views\hola\index.php (4)
+in C:\xampp\htdocs\demo\protected\controllers\HolaController.php (9)
+in C:\xampp\htdocs\demo\index.php (13)
