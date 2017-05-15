@@ -281,3 +281,133 @@ REQUEST_URI=/demo/hola/index
 in C:\xampp\htdocs\demo\protected\views\hola\index.php (4)
 in C:\xampp\htdocs\demo\protected\controllers\HolaController.php (9)
 in C:\xampp\htdocs\demo\index.php (13)
+2017/05/15 18:59:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/themes/classic/css/bootstrap.min.css".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('demo/themes/cla...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/index.php/demo/themes/classic/css/bootstrap.min.css
+HTTP_REFERER=http://localhost:8080/demo/index.php/users/20.html
+---
+2017/05/15 18:59:49 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/themes/classic/css/responsive.min.css".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('demo/themes/cla...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/index.php/demo/themes/classic/css/responsive.min.css
+HTTP_REFERER=http://localhost:8080/demo/index.php/users/20.html
+---
+2017/05/15 19:19:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/themes/classic/css/bootstrap.min.css".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('demo/themes/cla...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/index.php/demo/themes/classic/css/bootstrap.min.css
+HTTP_REFERER=http://localhost:8080/demo/index.php/site/page.html?view=about
+---
+2017/05/15 19:19:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/themes/classic/css/responsive.min.css".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('demo/themes/cla...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/index.php/demo/themes/classic/css/responsive.min.css
+HTTP_REFERER=http://localhost:8080/demo/index.php/site/page.html?view=about
+---
+2017/05/15 19:47:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/themes/classic/css/bootstrap.min.css".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('demo/themes/cla...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/index.php/demo/themes/classic/css/bootstrap.min.css
+HTTP_REFERER=http://localhost:8080/demo/index.php/site/index.html
+---
+2017/05/15 19:47:44 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/themes/classic/css/responsive.min.css".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('demo/themes/cla...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/index.php/demo/themes/classic/css/responsive.min.css
+HTTP_REFERER=http://localhost:8080/demo/index.php/site/index.html
+---
+2017/05/15 19:50:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/themes/classic/css/bootstrap.min.css".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('demo/themes/cla...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/index.php/demo/themes/classic/css/bootstrap.min.css
+HTTP_REFERER=http://localhost:8080/demo/index.php/site/index.html
+---
+2017/05/15 19:50:13 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/themes/classic/css/responsive.min.css".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('demo/themes/cla...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/index.php/demo/themes/classic/css/responsive.min.css
+HTTP_REFERER=http://localhost:8080/demo/index.php/site/index.html
+---
+2017/05/15 19:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/themes/classic/css/responsive.min.css".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('demo/themes/cla...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/index.php/demo/themes/classic/css/responsive.min.css
+HTTP_REFERER=http://localhost:8080/demo/index.php/site/page.html?view=about
+---
+2017/05/15 19:50:17 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "demo/themes/classic/css/bootstrap.min.css".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('demo/themes/cla...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/index.php/demo/themes/classic/css/bootstrap.min.css
+HTTP_REFERER=http://localhost:8080/demo/index.php/site/page.html?view=about
+---
+2017/05/15 20:07:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "cfe".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(270): CController->missingAction('cfe')
+#1 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('cfe')
+#2 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('hola/cfe')
+#3 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/hola/cfe
+---
+2017/05/15 20:07:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "create".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(270): CController->missingAction('create')
+#1 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('create')
+#2 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('hola/create')
+#3 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/hola/create
+---
+2017/05/15 20:08:23 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "users".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(270): CController->missingAction('users')
+#1 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('users')
+#2 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('hola/users')
+#3 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/hola/users
+---
+2017/05/15 20:08:29 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "users".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(270): CController->missingAction('users')
+#1 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('users')
+#2 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('hola/users/inde...')
+#3 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/hola/users/index
+---
