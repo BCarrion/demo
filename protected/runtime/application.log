@@ -411,3 +411,105 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/demo/hola/users/index
 ---
+2017/05/16 20:16:58 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countries".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('countries')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/countries
+---
+2017/05/16 20:17:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countries/index".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('countries/index')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/countries/index
+---
+2017/05/16 22:05:57 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "countries/create".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('countries/creat...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/countries/create
+---
+2017/05/16 22:10:40 [error] [exception.CException] exception 'CException' with message 'CountriesController contains improperly nested widget tags in its view "C:\xampp\htdocs\demo\protected\views\countries\create.php". A CActiveForm widget does not have an endWidget() call.' in C:\xampp\htdocs\yii-berna\framework\web\CBaseController.php:101
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#1 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#2 C:\xampp\htdocs\demo\protected\controllers\CountriesController.php(15): CController->render('create', Array)
+#3 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): CountriesController->actionCreate()
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#5 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#6 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#7 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('create')
+#8 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('countries/creat...')
+#9 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#11 {main}
+REQUEST_URI=/demo/countries/create
+---
+2017/05/16 23:50:07 [error] [exception.CException] exception 'CException' with message 'Property "Countries.Pais" is not defined.' in C:\xampp\htdocs\yii-berna\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\db\ar\CActiveRecord.php(145): CComponent->__get('Pais')
+#1 C:\xampp\htdocs\yii-berna\framework\web\helpers\CHtml.php(2747): CActiveRecord->__get('Pais')
+#2 C:\xampp\htdocs\yii-berna\framework\web\helpers\CHtml.php(2470): CHtml::resolveValue(Object(Countries), 'Pais')
+#3 C:\xampp\htdocs\yii-berna\framework\web\helpers\CHtml.php(1540): CHtml::activeInputField('text', Object(Countries), 'Pais', Array)
+#4 C:\xampp\htdocs\yii-berna\framework\web\widgets\CActiveForm.php(792): CHtml::activeTextField(Object(Countries), 'Pais', Array)
+#5 C:\xampp\htdocs\demo\protected\views\countries\create.php(3): CActiveForm->textField(Object(Countries), 'Pais')
+#6 C:\xampp\htdocs\yii-berna\framework\web\CBaseController.php(126): require('C:\\xampp\\htdocs...')
+#7 C:\xampp\htdocs\yii-berna\framework\web\CBaseController.php(95): CBaseController->renderInternal('C:\\xampp\\htdocs...', Array, true)
+#8 C:\xampp\htdocs\yii-berna\framework\web\CController.php(872): CBaseController->renderFile('C:\\xampp\\htdocs...', Array, true)
+#9 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): CController->renderPartial('create', Array, true)
+#10 C:\xampp\htdocs\demo\protected\controllers\CountriesController.php(15): CController->render('create', Array)
+#11 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): CountriesController->actionCreate()
+#12 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#13 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#14 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#15 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('create')
+#16 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('countries/creat...')
+#17 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#18 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#19 {main}
+REQUEST_URI=/demo/countries/create
+---
+2017/05/17 00:04:34 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.min.css".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/css/bootstrap.min.css
+HTTP_REFERER=http://localhost:8080/demo/countries/create
+---
+2017/05/17 00:04:36 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.min.css".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/css/bootstrap.min.css
+HTTP_REFERER=http://localhost:8080/demo/countries/create
+---
+2017/05/17 00:04:39 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "css/bootstrap.min.css".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('css/bootstrap.m...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/css/bootstrap.min.css
+HTTP_REFERER=http://localhost:8080/demo/countries/create
+---
+2017/05/17 00:45:07 [error] [php] Undefined variable: __POST__ (C:\xampp\htdocs\demo\protected\controllers\CountriesController.php:14)
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CountriesController->runAction()
+#1 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CountriesController->runActionWithFilters()
+#2 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CountriesController->run()
+#3 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#4 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#5 C:\xampp\htdocs\demo\index.php(13): CWebApplication->run()
+REQUEST_URI=/demo/countries/create
+in C:\xampp\htdocs\demo\protected\controllers\CountriesController.php (14)
+in C:\xampp\htdocs\demo\index.php (13)
