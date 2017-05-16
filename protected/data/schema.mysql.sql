@@ -26,3 +26,11 @@ INSERT INTO tbl_user (username, password, email) VALUES ('test18', 'pass18', 'te
 INSERT INTO tbl_user (username, password, email) VALUES ('test19', 'pass19', 'test19@example.com');
 INSERT INTO tbl_user (username, password, email) VALUES ('test20', 'pass20', 'test20@example.com');
 INSERT INTO tbl_user (username, password, email) VALUES ('test21', 'pass21', 'test21@example.com');
+
+/* ######################################################## */
+
+CREATE TABLE `demo`.`countries` (
+  `id` INT(10) NOT NULL AUTO_INCREMENT ,
+  `name` VARCHAR(100) NOT NULL ,
+  `status` TINYINT(1) NOT NULL ,
+  PRIMARY KEY (`id`)) ENGINE = InnoDB;
