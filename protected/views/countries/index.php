@@ -3,9 +3,22 @@
 </h3>
 <hr>
 <h1> Estos son los paises que estan creados</h1>
+<table>
+  <thead>
+    <th>ID</th>
+    <th>Pais</th>
+    <th>Estado</th>
+    <th>Acciones</th>
+  </thead>
+
   <? foreach($model as $country):?>
-  <h3>
-    Nombre: <? echo $country->name?>
-    <small> <br>Estado: <? echo $country->status==1?'Activo':'Inactivo'?></small>
-  </h3>
+  <tr>
+    <td><? echo $country -> id?></td>
+    <td><? echo $country -> name?></td>
+    <td><? echo $country -> status==1?'Activo':'Inactivo'?></td>
+    <td>
+    <? echo CHtml::link('Editar', array('update', 'id' => $country -> id), array('class' => 'btn btn-warning'))?>
+    </td>
+  </tr>
 <? endforeach ?>
+</table>

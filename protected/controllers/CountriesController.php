@@ -6,8 +6,8 @@ class CountriesController extends Controller
 {
   public function actionIndex()
   {
-    $model = Countries::model()->findAll();
-    $this->render('index', array('model' => $model));
+    $model = Countries::model() -> findAll();
+    $this -> render('index', array('model' => $model));
   }
   public function actionCreate()
   {
@@ -22,5 +22,18 @@ class CountriesController extends Controller
       }
     }
     $this->render('create', array('model' => $model));
+  }
+  public function actionUpdate($id)
+  {
+    $model = Countries::model()->findByPk($id);
+    if(isset($_POST['Countries']))
+    {
+      $model->attributes = $_POST['Countries'];
+      if($model -> save())
+      {
+        $this->redirect(array('index'));
+      }
+    }
+    $this-> render('update', array('model' => $model));
   }
 }

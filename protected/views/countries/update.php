@@ -1,4 +1,4 @@
-<h1>Registrar un nuevo pais</h1>
+<h1>Actualizar el ID - <? echo $model -> id ?></h1>
 <hr>
 <div class = "form-group">
 <? $form = $this -> beginWidget('CActiveForm')?>
