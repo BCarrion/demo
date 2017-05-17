@@ -36,4 +36,9 @@ class CountriesController extends Controller
     }
     $this-> render('update', array('model' => $model));
   }
+  public function actionDelete($id)
+  {
+    $model = Countries::model()->deleteByPk($id);
+    $this -> redirect(array('index'));
+  }
 }

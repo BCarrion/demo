@@ -18,6 +18,7 @@
     <td><? echo $country -> status==1?'Activo':'Inactivo'?></td>
     <td>
     <? echo CHtml::link('Editar', array('update', 'id' => $country -> id), array('class' => 'btn btn-warning'))?>
+    <? echo CHtml::link('Eliminar', array('delete', 'id' => $country -> id), array('class' => 'btn btn-danger', 'confirm' => 'Desea eliminar el pais '.$country->name.'?'))?>
     </td>
   </tr>
 <? endforeach ?>

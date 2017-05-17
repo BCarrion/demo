@@ -612,3 +612,45 @@ Stack trace:
 REQUEST_URI=/demo/index.php/countries/update/index
 HTTP_REFERER=http://localhost:8080/demo/index.php/countries/update/2.html
 ---
+2017/05/17 21:47:51 [error] [php] Missing argument 1 for CHtml::link(), called in C:\xampp\htdocs\demo\protected\views\countries\index.php on line 23 and defined (C:\xampp\htdocs\yii-berna\framework\web\helpers\CHtml.php:422)
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CBaseController.php(95): CountriesController->renderInternal()
+#1 C:\xampp\htdocs\yii-berna\framework\web\CController.php(872): CountriesController->renderFile()
+#2 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): CountriesController->renderPartial()
+#3 C:\xampp\htdocs\demo\protected\controllers\CountriesController.php(10): CountriesController->render()
+#4 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): CountriesController->actionIndex()
+#5 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams()
+#6 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CountriesController->runAction()
+#7 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CountriesController->runActionWithFilters()
+#8 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CountriesController->run()
+#9 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#10 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#11 C:\xampp\htdocs\demo\index.php(13): CWebApplication->run()
+REQUEST_URI=/demo/index.php/countries/index.html
+in C:\xampp\htdocs\demo\protected\views\countries\index.php (23)
+in C:\xampp\htdocs\demo\protected\controllers\CountriesController.php (10)
+in C:\xampp\htdocs\demo\index.php (13)
+2017/05/17 21:49:05 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "delete".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(270): CController->missingAction('delete')
+#1 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('delete')
+#2 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('countries/delet...')
+#3 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php/countries/delete/1.html
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---
+2017/05/17 22:12:20 [error] [exception.CHttpException.400] exception 'CHttpException' with message 'Your request is invalid.' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:337
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(309): CController->invalidActionParams(Object(CInlineAction))
+#1 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#2 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#3 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('delete')
+#4 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('countries/delet...')
+#5 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#6 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#7 {main}
+REQUEST_URI=/demo/index.php/countries/delete/index
+HTTP_REFERER=http://localhost:8080/demo/countries/
+---
