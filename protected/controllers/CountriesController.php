@@ -41,4 +41,8 @@ class CountriesController extends Controller
     $model = Countries::model()->deleteByPk($id);
     $this -> redirect(array('index'));
   }
+  public function actionView($id)
+  {
+    echo $id;
+  }
 }

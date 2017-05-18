@@ -13,8 +13,10 @@
 
   <? foreach($model as $country):?>
   <tr>
-    <td><? echo $country -> id?></td>
-    <td><? echo $country -> name?></td>
+    <td><? echo $country -> id ?></td>
+    <td>
+      <?  echo CHtml::link($country -> name, array('view', 'id' => $country -> id)) ?>
+    </td>
     <td><? echo $country -> status==1?'Activo':'Inactivo'?></td>
     <td>
     <? echo CHtml::link('Editar', array('update', 'id' => $country -> id), array('class' => 'btn btn-warning'))?>
