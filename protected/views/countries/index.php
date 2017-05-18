@@ -17,7 +17,8 @@
     <td>
       <?  echo CHtml::link($country -> name, array('view', 'id' => $country -> id)) ?>
     </td>
-    <td><? echo $country -> status==1?'Activo':'Inactivo'?></td>
+    <td><span class='label label-<? echo $country->status==1? "info":"warning" ?>'>
+    <? echo $country->status==1? "Activo":"Inactivo" ?></span></td>
     <td>
     <? echo CHtml::link('Editar', array('update', 'id' => $country -> id), array('class' => 'btn btn-warning'))?>
     <? echo CHtml::link('Eliminar', array('delete', 'id' => $country -> id), array('class' => 'btn btn-danger', 'confirm' => 'Desea eliminar el pais '.$country->name.'?'))?>
