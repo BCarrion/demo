@@ -15,10 +15,15 @@
   <tr>
     <td><? echo $country -> id ?></td>
     <td>
-      <?  echo CHtml::link($country -> name, array('view', 'id' => $country -> id)) ?>
+      <? echo CHtml::link($country -> name, array('view', 'id' => $country -> id)) ?>
     </td>
-    <td><span class='label label-<? echo $country->status==1? "info":"warning" ?>'>
-    <? echo $country->status==1? "Activo":"Inactivo" ?></span></td>
+    <td>
+      <a href="<? echo $this->createUrl('enable',array('id'=>$country->id))?>">
+      <span class='label label-<? echo $country->status==1? "info":"warning" ?>'>
+        <? echo $country->status==1? "Activo":"Inactivo" ?>
+      </span>
+      </a>
+  </td>
     <td>
     <? echo CHtml::link('Editar', array('update', 'id' => $country -> id), array('class' => 'btn btn-warning'))?>
     <? echo CHtml::link('Eliminar', array('delete', 'id' => $country -> id), array('class' => 'btn btn-danger', 'confirm' => 'Desea eliminar el pais '.$country->name.'?'))?>

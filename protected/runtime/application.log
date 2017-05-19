@@ -684,3 +684,33 @@ REQUEST_URI=/demo/index.php/countries/index.html
 in C:\xampp\htdocs\demo\protected\views\countries\index.php (20)
 in C:\xampp\htdocs\demo\protected\controllers\CountriesController.php (10)
 in C:\xampp\htdocs\demo\index.php (13)
+2017/05/19 01:47:20 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "enable".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(270): CController->missingAction('enable')
+#1 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('enable')
+#2 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('countries/enabl...')
+#3 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php/countries/enable/1.html
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---
+2017/05/19 01:50:40 [error] [php] strpos() expects parameter 1 to be string, array given (C:\xampp\htdocs\yii-berna\framework\web\CController.php:709)
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(589): CTheme->getViewFile()
+#1 C:\xampp\htdocs\yii-berna\framework\web\CController.php(870): CountriesController->getViewFile()
+#2 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): CountriesController->renderPartial()
+#3 C:\xampp\htdocs\demo\protected\controllers\CountriesController.php(66): CountriesController->render()
+#4 unknown(0): CountriesController->actionEnable()
+#5 C:\xampp\htdocs\yii-berna\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs()
+#6 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(47): CInlineAction->runWithParamsInternal()
+#7 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams()
+#8 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CountriesController->runAction()
+#9 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CountriesController->runActionWithFilters()
+#10 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CountriesController->run()
+#11 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#12 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#13 C:\xampp\htdocs\demo\index.php(13): CWebApplication->run()
+REQUEST_URI=/demo/index.php/countries/enable/1.html
+in C:\xampp\htdocs\demo\protected\controllers\CountriesController.php (66)
+in C:\xampp\htdocs\demo\index.php (13)

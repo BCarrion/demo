@@ -9,6 +9,7 @@ class CountriesController extends Controller
     $model = Countries::model()->findAll();
     $this->render('index', array('model' => $model));
   }
+
   public function actionCreate()
   {
     $model = new Countries();
@@ -23,6 +24,7 @@ class CountriesController extends Controller
     }
     $this->render('create', array('model' => $model));
   }
+
   public function actionUpdate($id)
   {
     $model = Countries::model()->findByPk($id);
@@ -36,14 +38,29 @@ class CountriesController extends Controller
     }
     $this->render('update', array('model' => $model));
   }
+
   public function actionDelete($id)
   {
     $model = Countries::model()->deleteByPk($id);
     $this->redirect(array('index'));
   }
+
   public function actionView($id)
   {
     $model = Countries::model()->findByPk($id);
     $this->render('view', array('model' => $model));
+  }
+
+  public function actionEnable($id)
+  {
+    $model = Countries::model()->findByPk($id);
+    if($model->status == 1)
+    {
+      $model->status = 0;
+    }
+    else $model->status = 1;
+
+    $model->save();
+    $this->redirect(array('index'));
   }
 }
