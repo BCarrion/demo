@@ -6,6 +6,11 @@ class CountriesController extends Controller
 {
   public function actionIndex()
   {
+    #echo Yii::getPathOfALias("application")."<br>";//protected
+    #echo Yii::getPathOfALias("webroot")."<br>";//root
+    #echo Yii::getPathOfALias("ext")."<br>";//protected/extentions
+    #echo Yii::getPathOfALias("zii")."<br>";//framework/zii
+
     $model = Countries::model()->findAll();
     $this->render('index', array('model' => $model));
   }
