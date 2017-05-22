@@ -714,3 +714,165 @@ Stack trace:
 REQUEST_URI=/demo/index.php/countries/enable/1.html
 in C:\xampp\htdocs\demo\protected\controllers\CountriesController.php (66)
 in C:\xampp\htdocs\demo\index.php (13)
+2017/05/22 22:23:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/js/bootstrap.min.js".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/js/boots...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/themes/js/bootstrap.min.js
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---
+2017/05/22 22:23:15 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/js/jquery.js".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/js/jquer...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/themes/js/jquery.js
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---
+2017/05/22 22:23:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic../themes/classic/js/jquery.js".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic....')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/themes/classic../themes/classic/js/jquery.js
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---
+2017/05/22 22:23:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic../themes/classic/js/bootstrap.min.js".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic....')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/themes/classic../themes/classic/js/bootstrap.min.js
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---
+2017/05/22 22:23:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic../themes/classic/js/jquery.js".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic....')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/themes/classic../themes/classic/js/jquery.js
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---
+2017/05/22 22:23:55 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic../themes/classic/js/bootstrap.min.js".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic....')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/themes/classic../themes/classic/js/bootstrap.min.js
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---
+2017/05/22 22:24:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classicthemes/classic/js/jquery.js".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classict...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/themes/classicthemes/classic/js/jquery.js
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---
+2017/05/22 22:24:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classicthemes/classic/js/bootstrap.min.js".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classict...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/themes/classicthemes/classic/js/bootstrap.min.js
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---
+2017/05/22 22:24:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classicthemes/classic/js/jquery.js".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classict...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/themes/classicthemes/classic/js/jquery.js
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---
+2017/05/22 22:24:21 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classicthemes/classic/js/bootstrap.min.js".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classict...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/themes/classicthemes/classic/js/bootstrap.min.js
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---
+2017/05/22 22:25:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classicthemes/classic/js/jquery.js".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classict...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/themes/classicthemes/classic/js/jquery.js
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---
+2017/05/22 22:25:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classicthemes/classic/js/bootstrap.min.js".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classict...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/themes/classicthemes/classic/js/bootstrap.min.js
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---
+2017/05/22 22:25:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classicthemes/classic/js/jquery.js".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classict...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/themes/classicthemes/classic/js/jquery.js
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---
+2017/05/22 22:25:00 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classicthemes/classic/js/bootstrap.min.js".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classict...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/themes/classicthemes/classic/js/bootstrap.min.js
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---
+2017/05/22 22:25:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/themes/classic/js/jquery.js".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/themes/classic/themes/classic/js/jquery.js
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---
+2017/05/22 22:25:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/themes/classic/js/bootstrap.min.js".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/themes/classic/themes/classic/js/bootstrap.min.js
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---
+2017/05/22 22:25:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/themes/classic/js/jquery.js".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/themes/classic/themes/classic/js/jquery.js
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---
+2017/05/22 22:25:11 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'Unable to resolve the request "themes/classic/themes/classic/js/bootstrap.min.js".' in C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php:286
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('themes/classic/...')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#2 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#3 {main}
+REQUEST_URI=/demo/themes/classic/themes/classic/js/bootstrap.min.js
+HTTP_REFERER=http://localhost:8080/demo/index.php/countries/index.html
+---

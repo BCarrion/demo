@@ -19,6 +19,7 @@ class CountriesController extends Controller
       $model->save();
       if($model->save())
       {
+        Yii::app()->user->setFlash("success", "Se creo correctamente el Pais ");
         $this->redirect(array('index'));
       }
     }
@@ -33,8 +34,10 @@ class CountriesController extends Controller
       $model->attributes = $_POST['Countries'];
       if($model->save())
       {
+        Yii::app()->user->setFlash("success", "Se edito correctamente el Pais ");
         $this->redirect(array('index'));
       }
+      else Yii::app()->user->setFlash("warning", "No se actualizaron los datos");
     }
     $this->render('update', array('model' => $model));
   }
@@ -42,6 +45,7 @@ class CountriesController extends Controller
   public function actionDelete($id)
   {
     $model = Countries::model()->deleteByPk($id);
+    Yii::app()->user->setFlash("error", "Se elimino el pais correctamente");
     $this->redirect(array('index'));
   }
 
