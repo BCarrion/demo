@@ -1,5 +1,6 @@
 <h3>
   <? echo CHtml::link('Registrar un nuevo Pais', array('create'), array('class' => 'btn btn-primary'))?>
+  <? echo CHtml::link('Exportar listado', array('index','excel' => 1), array('class' => 'btn btn-info'))?>
 </h3>
 <hr>
 <h1> Estos son los paises que estan creados</h1>

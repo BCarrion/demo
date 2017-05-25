@@ -31,6 +31,13 @@ class CountriesController extends Controller
     #echo yii::app()->request->userHostAddress.'<br>';
 
     $model = Countries::model()->findAll();
+
+    if (isset($_GET['excel'])) {
+      $model = Countries::model()->findAll();
+      $content = $this->renderPartial('excel', array('model' => $model));
+      yii::app()->request->sendFile('listado_paises.xls', $content);
+    }
+
     $this->render('index', array('model' => $model));
   }
 

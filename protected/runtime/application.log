@@ -1074,3 +1074,20 @@ Stack trace:
 #5 {main}
 REQUEST_URI=/demo/index.php/countries/query=1
 ---
+2017/05/25 23:22:54 [error] [php] Undefined variable: excel (C:\xampp\htdocs\demo\protected\views\countries\index.php:3)
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(872): CountriesController->renderFile()
+#1 C:\xampp\htdocs\yii-berna\framework\web\CController.php(785): CountriesController->renderPartial()
+#2 C:\xampp\htdocs\demo\protected\controllers\CountriesController.php(39): CountriesController->render()
+#3 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): CountriesController->actionIndex()
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams()
+#5 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CountriesController->runAction()
+#6 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CountriesController->runActionWithFilters()
+#7 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CountriesController->run()
+#8 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController()
+#9 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#10 C:\xampp\htdocs\demo\index.php(13): CWebApplication->run()
+REQUEST_URI=/demo/index.php/countries/index.html
+in C:\xampp\htdocs\demo\protected\views\countries\index.php (3)
+in C:\xampp\htdocs\demo\protected\controllers\CountriesController.php (39)
+in C:\xampp\htdocs\demo\index.php (13)
