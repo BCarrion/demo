@@ -11,7 +11,7 @@ return array(
 	'theme' => 'classic',
 
 	// preloading 'log' component
-	'preload'=>array('log'),
+'preload'=>array('log', /*'otroComponente'*/),
 
 	// autoloading model and component classes
 	'import'=>array(
@@ -34,6 +34,11 @@ return array(
 
 		'happy' => array(
 			'class' => 'ext.BHappy',
+		),
+
+		'otroComponente' => array(
+			'class' => 'ext.MHappy',
+			'trato' => 1,
 		),
 
 		'user'=>array(

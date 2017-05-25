@@ -11,8 +11,12 @@ class CountriesController extends Controller
     #echo Yii::getPathOfALias("ext")."<br>";//protected/extentions
     #echo Yii::getPathOfALias("zii")."<br>";//framework/zii
 
-    Yii::app()->happy;
-    echo Yii::app()->happy->saludo()."<br>";
+    #Yii::app()->happy;
+    #Yii::app()->otroComponente;
+    #echo Yii::app()->happy->saludo()."<br>";
+    #Yii::app()->otroComponente->trato=2;
+    #echo Yii::app()->otroComponente->saludo()."<br>";
+
 
     $model = Countries::model()->findAll();
     $this->render('index', array('model' => $model));
