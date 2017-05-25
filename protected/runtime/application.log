@@ -1007,3 +1007,70 @@ REQUEST_URI=/demo/countries/
 in C:\xampp\htdocs\demo\protected\extensions\MHappy.php (16)
 in C:\xampp\htdocs\demo\protected\controllers\CountriesController.php (17)
 in C:\xampp\htdocs\demo\index.php (13)
+2017/05/25 21:40:03 [error] [exception.CException] exception 'CException' with message 'CHttpRequest and its behaviors do not have a method or closure named "baseUrl".' in C:\xampp\htdocs\yii-berna\framework\base\CComponent.php:266
+Stack trace:
+#0 C:\xampp\htdocs\demo\protected\controllers\CountriesController.php(24): CComponent->__call('baseUrl', Array)
+#1 C:\xampp\htdocs\demo\protected\controllers\CountriesController.php(24): CHttpRequest->baseUrl()
+#2 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): CountriesController->actionIndex()
+#3 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#5 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#6 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('')
+#7 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('countries')
+#8 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#9 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#10 {main}
+REQUEST_URI=/demo/countries/
+---
+2017/05/25 21:40:29 [error] [exception.CException] exception 'CException' with message 'Property "CHttpRequest.baseUr" is not defined.' in C:\xampp\htdocs\yii-berna\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\demo\protected\controllers\CountriesController.php(24): CComponent->__get('baseUr')
+#1 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): CountriesController->actionIndex()
+#2 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('')
+#6 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('countries')
+#7 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/demo/countries/
+---
+2017/05/25 22:15:13 [error] [exception.CException] exception 'CException' with message 'Property "CHttpRequest.urlReferer" is not defined.' in C:\xampp\htdocs\yii-berna\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\demo\protected\controllers\CountriesController.php(27): CComponent->__get('urlReferer')
+#1 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): CountriesController->actionIndex()
+#2 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('')
+#6 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('countries')
+#7 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/demo/countries/
+---
+2017/05/25 22:21:18 [error] [exception.CException] exception 'CException' with message 'Property "CHttpRequest.getUrlReferrer" is not defined.' in C:\xampp\htdocs\yii-berna\framework\base\CComponent.php:130
+Stack trace:
+#0 C:\xampp\htdocs\demo\protected\controllers\CountriesController.php(27): CComponent->__get('getUrlReferrer')
+#1 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(49): CountriesController->actionIndex()
+#2 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#3 C:\xampp\htdocs\yii-berna\framework\web\CController.php(286): CController->runAction(Object(CInlineAction))
+#4 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#5 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('')
+#6 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('countries')
+#7 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#8 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#9 {main}
+REQUEST_URI=/demo/index.php/countries
+---
+2017/05/25 22:26:51 [error] [exception.CHttpException.404] exception 'CHttpException' with message 'The system is unable to find the requested action "query=1".' in C:\xampp\htdocs\yii-berna\framework\web\CController.php:486
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\web\CController.php(270): CController->missingAction('query=1')
+#1 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('query=1')
+#2 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('countries/query...')
+#3 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#4 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#5 {main}
+REQUEST_URI=/demo/index.php/countries/query=1
+---

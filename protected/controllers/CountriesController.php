@@ -17,6 +17,18 @@ class CountriesController extends Controller
     #Yii::app()->otroComponente->trato=2;
     #echo Yii::app()->otroComponente->saludo()."<br>";
 
+    //$test = yii::app()->request->getPost('test', 'defaultValue'); # $_POST['test']
+    //$test = yii::app()->request->getQuery('test', 'defaultValue'); # $_GET['test']
+    //$test = yii::app()->request->getParam('test', 'defaultValue'); # $_POST['test'] && $_POST['test']
+
+    #echo yii::app()->request->baseUrl.'<br>';
+    #echo yii::app()->request->requestUri.'<br>';
+    #echo yii::app()->request->pathInfo.'<br>';
+    #echo yii::app()->request->urlReferrer.'<br>';
+    #echo yii::app()->request->queryString.'<br>';
+    #echo yii::app()->request->userAgent.'<br>';
+    #echo yii::app()->request->userHost.'<br>';
+    #echo yii::app()->request->userHostAddress.'<br>';
 
     $model = Countries::model()->findAll();
     $this->render('index', array('model' => $model));
