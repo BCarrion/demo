@@ -32,6 +32,10 @@ return array(
 	// application components
 	'components'=>array(
 
+		'happy' => array(
+			'class' => 'ext.BHappy',
+		),
+
 		'user'=>array(
 			// enable cookie-based authentication
 			'allowAutoLogin'=>true,
