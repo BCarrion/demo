@@ -32,6 +32,14 @@ return array(
 	// application components
 	'components'=>array(
 
+		'authManager' => array(
+			'class' => 'CDbAuthManager',
+			'connectionID' => 'db',
+			'itemTable'=>'AuthItem',
+			'itemChildTable'=>'AuthItemChild',
+			'assignmentTable'=>'AuthAssignment',
+		),
+
 		'happy' => array(
 			'class' => 'ext.BHappy',
 		),

@@ -6,6 +6,20 @@ class CountriesController extends Controller
 {
   public function actionIndex()
   {
+
+    #echo 'Usuario: '.yii::app()->user->id.'<br>';
+    /*if(Yii::app()->authManager->checkAccess('admin', Yii::app()->user->id))
+    {
+      echo "Bienvenido desde authManager <br>";
+    }*/
+    /*if(Yii::app()->user->checkAccess('admin'))
+    {
+      echo "Bienvenido desde user";
+    }*/
+
+    #Yii::app()->authManager->createRole('admin');
+    #Yii::app()->authManager->assign('admin', 1);
+
     #echo Yii::getPathOfALias("application")."<br>";//protected
     #echo Yii::getPathOfALias("webroot")."<br>";//root
     #echo Yii::getPathOfALias("ext")."<br>";//protected/extentions
