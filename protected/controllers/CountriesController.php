@@ -18,7 +18,7 @@ class CountriesController extends Controller
     }*/
 
     #Yii::app()->authManager->createRole('admin');
-    #Yii::app()->authManager->assign('admin', 1);
+    #Yii::app()->authManager->assign('admin', 2);
 
     #echo Yii::getPathOfALias("application")."<br>";//protected
     #echo Yii::getPathOfALias("webroot")."<br>";//root

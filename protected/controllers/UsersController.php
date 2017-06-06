@@ -28,7 +28,7 @@ class UsersController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view'),
+				'actions'=>array('index','view', 'assign'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
@@ -141,6 +141,15 @@ class UsersController extends Controller
 		$this->render('admin',array(
 			'model'=>$model,
 		));
+	}
+
+	public function actionAssign($id)
+	{
+		if(Yii::app()->authManager->checkAccess($_GET['item'], $id))
+			Yii::app()->authManager->revoke($_GET['item'], $id);
+		else
+			Yii::app()->authManager->assign($_GET['item'], $id);
+		$this->redirect(array("view", 'id'=>$id));
 	}
 
 	/**

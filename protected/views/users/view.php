@@ -37,7 +37,7 @@ $this->menu=array(
 			<? if($data->type == 1) echo 'Tarea'?>
 			<? if($data->type == 2) echo 'Operacion'?>
 		</small>
-		<? echo CHtml::Link(($enabled?'Off':'On'), array('users/assign'),array('class' =>$enabled? 'btn btn-primary':'btn btn-info'))?>
+		<? echo CHtml::Link(($enabled?'Off':'On'), array('users/assign', 'id' => $model->id, 'item' => $data->name),array('class' =>$enabled? 'btn btn-primary':'btn btn-info'))?>
 		<p> <? echo $data->description ?> </p>
 		</h4>
 </li>
