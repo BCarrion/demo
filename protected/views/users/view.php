@@ -27,21 +27,20 @@ $this->menu=array(
 		'email',
 	),
 )); ?>
-<ul class="nav">
+<ul class="nav nav-pills">
 <? foreach(Yii::app()->authManager->getAuthItems() as $data): ?>
-	<li><a href="#">
+<? $enabled = Yii::app()->authManager->checkAccess($data->name, $model->id)?>
+	<li>
 		<h4> <? echo $data->name?>
 			<small>
 				<? if($data->type == 0) echo 'Rol'?>
 			<? if($data->type == 1) echo 'Tarea'?>
 			<? if($data->type == 2) echo 'Operacion'?>
 		</small>
-		<? echo CHtml::Link($enable?'Off':'On'), array('users/assign'),array('class' =>$enable? 'btn btn-primary')?>
-		<p>
-			<? $enabled = Yii::app()->authManager->checkAccess($data->name, $model->id)?>
-			<? echo $enabled? '<span class=\'label label-info\'> Habilitado </span>':'' ?>
-		</p>
+		<? echo CHtml::Link(($enabled?'Off':'On'), array('users/assign'),array('class' =>$enabled? 'btn btn-primary':'btn btn-info'))?>
+		<p> <? echo $data->description ?> </p>
 		</h4>
-	</a></li>
+</li>
+	<hr>
 <? endforeach ?>
 </ul>
