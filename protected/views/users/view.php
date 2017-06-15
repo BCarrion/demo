@@ -27,7 +27,7 @@ $this->menu=array(
 		'email',
 	),
 )); ?>
-<div class="row">
+<div class="col-md-12">
 	<div class="col-md-6">
 		<? $form = $this->beginWidget('CActiveForm') ?>
 		<div class="row">

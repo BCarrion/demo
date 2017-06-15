@@ -15,7 +15,7 @@ class RoleForm extends CFormModel
   {
     return array(
       array('name, type', 'required'),
-      array('description', 'safe'),
+      array('description', 'ext.MyValidator'),
     );
   }
 
