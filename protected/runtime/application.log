@@ -2535,3 +2535,31 @@ REQUEST_URI=/demo/index.php/users/1.html
 in C:\xampp\htdocs\demo\protected\extensions\MyValidator.php (12)
 in C:\xampp\htdocs\demo\protected\controllers\UsersController.php (59)
 in C:\xampp\htdocs\demo\index.php (13)
+2017/06/15 23:02:09 [error] [exception.CException] exception 'CException' with message 'Property "MyValidator.0" is not defined.' in C:\xampp\htdocs\yii-berna\framework\base\CComponent.php:173
+Stack trace:
+#0 C:\xampp\htdocs\yii-berna\framework\validators\CValidator.php(177): CComponent->__set('0', 'filter')
+#1 C:\xampp\htdocs\yii-berna\framework\base\CModel.php(287): CValidator::createValidator('ext.MyValidator', Object(RoleForm), 'description', Array)
+#2 C:\xampp\htdocs\yii-berna\framework\base\CModel.php(260): CModel->createValidators()
+#3 C:\xampp\htdocs\yii-berna\framework\base\CModel.php(547): CModel->getValidators()
+#4 C:\xampp\htdocs\yii-berna\framework\base\CModel.php(468): CModel->getSafeAttributeNames()
+#5 C:\xampp\htdocs\yii-berna\framework\base\CComponent.php(152): CModel->setAttributes(Array)
+#6 C:\xampp\htdocs\demo\protected\controllers\UsersController.php(58): CComponent->__set('attributes', Array)
+#7 [internal function]: UsersController->actionView('1')
+#8 C:\xampp\htdocs\yii-berna\framework\web\actions\CAction.php(109): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#9 C:\xampp\htdocs\yii-berna\framework\web\actions\CInlineAction.php(47): CAction->runWithParamsInternal(Object(UsersController), Object(ReflectionMethod), Array)
+#10 C:\xampp\htdocs\yii-berna\framework\web\CController.php(308): CInlineAction->runWithParams(Array)
+#11 C:\xampp\htdocs\yii-berna\framework\web\filters\CFilterChain.php(134): CController->runAction(Object(CInlineAction))
+#12 C:\xampp\htdocs\yii-berna\framework\web\filters\CFilter.php(40): CFilterChain->run()
+#13 C:\xampp\htdocs\yii-berna\framework\web\CController.php(1148): CFilter->filter(Object(CFilterChain))
+#14 C:\xampp\htdocs\yii-berna\framework\web\filters\CInlineFilter.php(58): CController->filterAccessControl(Object(CFilterChain))
+#15 C:\xampp\htdocs\yii-berna\framework\web\filters\CFilterChain.php(131): CInlineFilter->filter(Object(CFilterChain))
+#16 C:\xampp\htdocs\yii-berna\framework\web\CController.php(291): CFilterChain->run()
+#17 C:\xampp\htdocs\yii-berna\framework\web\CController.php(265): CController->runActionWithFilters(Object(CInlineAction), Array)
+#18 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(282): CController->run('view')
+#19 C:\xampp\htdocs\yii-berna\framework\web\CWebApplication.php(141): CWebApplication->runController('users/view')
+#20 C:\xampp\htdocs\yii-berna\framework\base\CApplication.php(185): CWebApplication->processRequest()
+#21 C:\xampp\htdocs\demo\index.php(13): CApplication->run()
+#22 {main}
+REQUEST_URI=/demo/index.php/users/1.html
+HTTP_REFERER=http://localhost:8080/demo/index.php/users/1.html
+---
