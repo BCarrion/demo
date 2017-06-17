@@ -11,7 +11,7 @@ class MyValidator extends CValidator
   {
       if ($object->$attribute == $this->word)
       {
-        $this->addError($object, $attribute, 'No permitimos espias');
+        $this->addError($object, $attribute, 'Estoy validando desde el archivo de validaciones creado');
       }
   }
 }

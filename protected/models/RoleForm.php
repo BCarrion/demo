@@ -15,8 +15,16 @@ class RoleForm extends CFormModel
   {
     return array(
       array('name, type', 'required'),
-    array('description', 'ext.MyValidator', /*'filter', 'filter'=>'trim' trim elimina espacios en blanco*/),
+      array('description', 'ext.MyValidator'),
+      array('description', 'filter', 'filter'=>'trim' /*trim elimina espacios en blanco*/),
+      array('description', 'validando'),
     );
+  }
+
+  public function validando()
+  {
+      if ($this->description == '123')
+      $this->addError('description', 'Estoy validando desde un metodo en el modelo');
   }
 
 }
