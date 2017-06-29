@@ -29,7 +29,11 @@ $this->menu=array(
 )); ?>
 <div class="col-md-12">
 	<div class="col-md-6">
-		<? $form = $this->beginWidget('CActiveForm') ?>
+		<? $form = $this->beginWidget('CActiveForm', array(
+			'id'=>'role-form',
+			'enableAjaxValidation'=>false,
+			'clientOptions'=>array('validateOnSubmit'=>true)
+		)) ?>
 		<div class="row">
 			<? echo $form->labelEx($role, 'name') ?>
 			<? echo $form->textField($role, 'name') ?>

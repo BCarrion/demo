@@ -1,6 +1,13 @@
 <?php
+/**
+ * This is the template for generating a controller class file for CRUD feature.
+ * The following variables are available in this template:
+ * - $this: the CrudCode object
+ */
+?>
+<?php echo "<?php\n"; ?>
 
-class UsersController extends Controller
+class <?php echo $this->controllerClass; ?> extends <?php echo $this->baseControllerClass."\n"; ?>
 {
 	/**
 	 * @var string the default layout for the views. Defaults to '//layouts/column2', meaning
@@ -28,15 +35,15 @@ class UsersController extends Controller
 	{
 		return array(
 			array('allow',  // allow all users to perform 'index' and 'view' actions
-				'actions'=>array('index','view', 'assign'),
+				'actions'=>array('index','view'),
 				'users'=>array('*'),
 			),
 			array('allow', // allow authenticated user to perform 'create' and 'update' actions
-				'actions'=>array('create','update'),
+				'actions'=>array(),
 				'users'=>array('@'),
 			),
 			array('allow', // allow admin user to perform 'admin' and 'delete' actions
-				'actions'=>array('admin','delete'),
+				'actions'=>array('admin','delete', 'create','update'),
 				'roles'=>array('admin'),
 			),
 			array('deny',  // deny all users
@@ -51,32 +58,8 @@ class UsersController extends Controller
 	 */
 	public function actionView($id)
 	{
-
-		$role = new RoleForm;
-		$this->performAjaxValidation($role);
-
-		if (isset($_POST['ajax'])) {
-			echo "me llego algo";
-		if ($_POST['ajax'] === 'role-form') {
-			echo "estoy validando";
-			echo ActiveRecord::validate($role);
-			Yii::app()->end();
-		}
-		}
-
-		if(isset($_POST['RoleForm']))
-		{
-			$role->attributes = $_POST['RoleForm'];
-			if ($role->validate())
-			{
-				Yii::app()->authManager->createRole($role->name, $role->description);
-				Yii::app()->authManager->assign($role->name, $id);
-				$this->redirect(array('view', 'id'=>$id));
-			}
-		}
 		$this->render('view',array(
 			'model'=>$this->loadModel($id),
-			'role'=>$role,
 		));
 	}
 
@@ -86,16 +69,16 @@ class UsersController extends Controller
 	 */
 	public function actionCreate()
 	{
-		$model=new Users;
+		$model=new <?php echo $this->modelClass; ?>;
 
 		// Uncomment the following line if AJAX validation is needed
-		 $this->performAjaxValidation($model);
+		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Users']))
+		if(isset($_POST['<?php echo $this->modelClass; ?>']))
 		{
-			$model->attributes=$_POST['Users'];
+			$model->attributes=$_POST['<?php echo $this->modelClass; ?>'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('view','id'=>$model-><?php echo $this->tableSchema->primaryKey; ?>));
 		}
 
 		$this->render('create',array(
@@ -113,13 +96,13 @@ class UsersController extends Controller
 		$model=$this->loadModel($id);
 
 		// Uncomment the following line if AJAX validation is needed
-		 $this->performAjaxValidation($model);
+		// $this->performAjaxValidation($model);
 
-		if(isset($_POST['Users']))
+		if(isset($_POST['<?php echo $this->modelClass; ?>']))
 		{
-			$model->attributes=$_POST['Users'];
+			$model->attributes=$_POST['<?php echo $this->modelClass; ?>'];
 			if($model->save())
-				$this->redirect(array('view','id'=>$model->id));
+				$this->redirect(array('view','id'=>$model-><?php echo $this->tableSchema->primaryKey; ?>));
 		}
 
 		$this->render('update',array(
@@ -146,7 +129,7 @@ class UsersController extends Controller
 	 */
 	public function actionIndex()
 	{
-		$dataProvider=new CActiveDataProvider('Users');
+		$dataProvider=new CActiveDataProvider('<?php echo $this->modelClass; ?>');
 		$this->render('index',array(
 			'dataProvider'=>$dataProvider,
 		));
@@ -157,35 +140,26 @@ class UsersController extends Controller
 	 */
 	public function actionAdmin()
 	{
-		$model=new Users('search');
+		$model=new <?php echo $this->modelClass; ?>('search');
 		$model->unsetAttributes();  // clear any default values
-		if(isset($_GET['Users']))
-			$model->attributes=$_GET['Users'];
+		if(isset($_GET['<?php echo $this->modelClass; ?>']))
+			$model->attributes=$_GET['<?php echo $this->modelClass; ?>'];
 
 		$this->render('admin',array(
 			'model'=>$model,
 		));
 	}
 
-	public function actionAssign($id)
-	{
-		if(Yii::app()->authManager->checkAccess($_GET['item'], $id))
-			Yii::app()->authManager->revoke($_GET['item'], $id);
-		else
-			Yii::app()->authManager->assign($_GET['item'], $id);
-		$this->redirect(array("view", 'id'=>$id));
-	}
-
 	/**
 	 * Returns the data model based on the primary key given in the GET variable.
 	 * If the data model is not found, an HTTP exception will be raised.
 	 * @param integer $id the ID of the model to be loaded
-	 * @return Users the loaded model
+	 * @return <?php echo $this->modelClass; ?> the loaded model
 	 * @throws CHttpException
 	 */
 	public function loadModel($id)
 	{
-		$model=Users::model()->findByPk($id);
+		$model=<?php echo $this->modelClass; ?>::model()->findByPk($id);
 		if($model===null)
 			throw new CHttpException(404,'The requested page does not exist.');
 		return $model;
@@ -193,15 +167,14 @@ class UsersController extends Controller
 
 	/**
 	 * Performs the AJAX validation.
-	 * @param Users $model the model to be validated
+	 * @param <?php echo $this->modelClass; ?> $model the model to be validated
 	 */
 	protected function performAjaxValidation($model)
 	{
-		if(isset($_POST['ajax']) && $_POST['ajax']==='users-form')
+		if(isset($_POST['ajax']) && $_POST['ajax']==='<?php echo $this->class2id($this->modelClass); ?>-form')
 		{
 			echo CActiveForm::validate($model);
 			Yii::app()->end();
 		}
-
 	}
 }
